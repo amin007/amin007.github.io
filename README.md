@@ -19,6 +19,7 @@ ___
   * [animate.css](https://daneden.github.io/animate.css)
   * [Sweet Alert](http://t4t5.github.io/sweetalert)
   * [FontAwesome](http://fortawesome.github.io/Font-Awesome)
+  * [Enjoy Css](https://enjoycss.com)
 * Javascript
   * [jQuery](http://jquery.com)
   * [jQuery.Form](http://malsup.com/jquery/form)
