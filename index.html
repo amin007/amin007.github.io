@@ -8,6 +8,17 @@
 <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" -->
 <!--link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet" type="text/css"-->
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
+<style>
+.hurufKecil
+{
+	display: inline-block;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 0em;
+	text-transform: uppercase;
+}
+.hurufBesar{display: block;font-size: 2.5rem;}
+</style>
 </head>
 <body>
 <br>
@@ -48,6 +59,22 @@
 </div>
 <!-- ////////////////////////////////////////////////////////////////////////////////// -->
 </div><!-- / class="container" -->
+
+<div class="container">
+	<ul class="nav nav-pills nav-fill">
+	<li class="nav-item hurufKecil"><a class="nav-link">
+		<span class="hurufBesar" id="days"></span> Hari</a></li>
+	<li class="nav-item hurufKecil"><a class="nav-link">
+		<span class="hurufBesar" id="hours"></span> Jam</a></li>
+	<li class="nav-item hurufKecil"><a class="nav-link">
+		<span class="hurufBesar" id="minutes"></span> Minit</a></li>
+	<li class="nav-item hurufKecil"><a class="nav-link">
+		<span class="hurufBesar" id="seconds"></span> Saat</a></li>
+	<li class="nav-item hurufKecil"><a class="nav-link">
+		<span> Menunggu ketibaan
+		<br> 1 Ramadhan 1441 <br> 24 April 2020</span></a></li>
+	</ul>
+</div><!-- / class="container -->
 
 <div class="container">
 <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -237,5 +264,28 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script -->
+<script>
+//https://codepen.io/AllThingsSmitty/pen/JJavZN
+const second = 1000,
+	minute = second * 60,
+	hour = minute * 60,
+	day = hour * 24;
+let countDown = new Date('Apr 24, 2020 00:00:00').getTime(),
+x = setInterval(function()
+{
+	let now = new Date().getTime(),
+	distance = countDown - now;
+
+	document.getElementById('days').innerText = Math.floor(distance / (day)),
+	document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+	document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+	document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+	//do something later when date is reached
+	//if (distance < 0) {
+	//  clearInterval(x);
+	//  'IT'S MY BIRTHDAY!;
+	//}
+}, second)
+</script>
 </body>
 </html>
