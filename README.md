@@ -15,12 +15,10 @@ echo '<pre>'; print_r($_SERVER); echo '</pre>';
 ```php
 	function dnschanger()
 	{
-		$data[]['dns'] = '|Google DNS-------- | 8.8.8.8         | 8.8.4.4';
-		$data[]['dns'] = '|Cloudflare DNS---- | 1.1.1.1         | 1.0.0.1';
-		$data[]['dns'] = '|OpenDNS----------- | 208.67.222.123  | 208.67.222.220';
 		$data[]['dns'] = '|Streamyx --------- | 202.188.18.188  | 1.9.1.9';
 		$data[]['dns'] = '|Google DNS-------- | 8.8.8.8         | 8.8.4.4';
 		$data[]['dns'] = '|Cloudflare DNS---- | 1.1.1.1         | 1.0.0.1';
+		$data[]['dns'] = '|Cloudflare3 DNS--- | 1.1.1.3         | 1.0.0.3';
 		$data[]['dns'] = '|OpenDNS----------- | 208.67.222.123  | 208.67.222.220';
 		$data[]['dns'] = '|OpenDNS Home------ | 208.67.222.222  | 208.67.220.220';
 		$data[]['dns'] = '|Quad9------------- | 9.9.9.9         | 149.112.112.112';
