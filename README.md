@@ -41,7 +41,30 @@ echo '<pre>'; print_r($_SERVER); echo '</pre>';
 	}
 ```
 
+```php
+	function getIdea()
+	{
+		$papar = array(
+			'[TM Test]'=>'//speedtest.tm.com.my',
+			'[Fast.com]'=>'//fast.com',
+			'[Speedtest.net]'=>'https://www.speedtest.net',
+			'[Kalendar]'=>'https://www.mysumber.com/cuti-umum.html',
+			'[jQuery]'=>'http://jquery.com',
+			'[Bootstrap]'=>'http://getbootstrap.com',
+			'[animate.css]'=>'https://daneden.github.io/animate.css',
+			'[Sweet Alert]'=>'http://t4t5.github.io/sweetalert',
+			'[FontAwesome]'=>'http://fortawesome.github.io/Font-Awesome',
+			'[backstretch]'=>'http://srobbin.com/jquery-plugins/backstretch',
+			'[jQuery.Form]'=>'http://malsup.com/jquery/form',
+			'[Pixabay]'=>'https://pixabay.com',
+			'[Pexels]'=>'https://pexels.com',
+			'[Unslpash]'=>'https://unsplash.com',
+			'[7-themes]'=>'http://7-themes.com',
+		);
 
+		return $papar;
+	}
+```
 ___
 # Standard
 * http://www.php-fig.org/psr/psr-4/
