@@ -91,6 +91,7 @@ ___
 * Programming
   * [PHP Releases](https://windows.php.net/downloads/releases)
   * [Laragon](https://laragon.org)
+  * [Learn-Php-For-Wordpress](https://code.tutsplus.com/courses/learn-php-for-wordpress/lessons/php-in-the-loop)
   * [PHP Codeingiter](https://codeigniter.com)
   * [PHP Cakephp](https://cakephp.org)
   * [PHP Laravel](https://laravel.com)
